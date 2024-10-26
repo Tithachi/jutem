@@ -46,7 +46,7 @@
             <div class="row gx-0 align-items-center" style="height: 45px;">
                 <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                     <div class="d-flex flex-wrap">
-                        <a href="#" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find using Google Maps</a>
+                        <a href="#location" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find using Google Maps</a>
                         <a href="tel:260763300275" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+260763300275</a>
                         <a href="mailto:mwiya108@gmail.com" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i>mwiya108@gmail.com</a>
                     </div>
@@ -79,7 +79,7 @@
                         <a href="#services" class="nav-item nav-link">Services</a>
                         <a href="#about" class="nav-item nav-link">About</a>
                         <a href="#feature" class="nav-item nav-link">Mandate</a>
-                        <a href="#footer" class="nav-item nav-link">Contact Us</a>
+                        <a href="#book" class="nav-item nav-link">Contact Us</a>
                         <!--<div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
@@ -326,20 +326,20 @@
                                 {% csrf_token %}
                                 <div class="row gy-3 gx-4">
                                     <div class="col-xl-6">
-                                        <input type="text" class="form-control py-3 border-primary bg-transparent text-white" name="{{ form.full_name.name }}" placeholder="Full Name">
+                                        <input type="text" class="form-control py-3 border-primary bg-transparent text-black" name="{{ form.full_name.name }}" placeholder="Full Name">
                                     </div>
                                     <div class="col-xl-6">
-                                        <input type="email" class="form-control py-3 border-primary bg-transparent text-white" name="{{ form.email.name }}" placeholder="Email">
+                                        <input type="email" class="form-control py-3 border-primary bg-transparent text-black" name="{{ form.email.name }}" placeholder="Email">
                                     </div>
                                     <div class="col-xl-6">
                                         <input type="text" class="form-control py-3 border-primary bg-transparent" name="{{ form.phone.name }}" placeholder="Phone">
                                     </div>
                                     <div class="col-xl-6">
                                         <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
-                                            <option selected>Industry</option>
-                                            <option value="1">Male</option>
-                                            <option value="2">Female</option>
-                                            <option value="3">Other</option>
+                                            <option selected disabled>Select Industry</option>
+                                            {% for industry in form.industry.field.choices %}
+                                              <option value="{{ industry.0 }}">{{ industry.1 }}</option>
+                                          {% endfor %}
                                         </select>
                                     </div>
                                     <div class="col-xl-6">
@@ -347,15 +347,14 @@
                                     </div>
                                     <div class="col-xl-6">
                                         <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
-                                            <option selected>Product Enquiry</option>
-                                            <option value="1">Funding and Advisory Services</option>
-                                            <option value="2">Micro Financing</option>
-                                            <option value="2">Product Financing</option>
-                                            <option value="2">Business Strategy advisory</option>
+                                            <option selected disabled>Select Product</option>
+                                            {% for product in form.product_enquiry.field.choices %}
+                                              <option value="{{ product.0 }}">{{ product.1 }}</option>
+                                          {% endfor %}
                                         </select>
                                     </div>
                                     <div class="col-12">
-                                        <textarea class="form-control border-primary bg-transparent text-white" name="{{ form.comments.name }}" id="area-text" cols="30" rows="5" placeholder="Message..."></textarea>
+                                        <textarea class="form-control border-primary bg-transparent text-black" name="{{ form.comments.name }}" id="area-text" cols="30" rows="5" placeholder="Message..."></textarea>
                                     </div>
                                     <div class="col-12">
                                         <button type="submit" class="btn btn-primary text-white w-100 py-3 px-5">SUBMIT NOW</button>
@@ -391,19 +390,22 @@
         <!-- Book Appointment End -->
 
 <!-- Feature Start -->
-<div id="feature">
+<div id="location">
     <div class="container-fluid feature py-5">
         <div class="container py-5">
             <div class="row g-4 justify-content-center">
                 <!-- Google Maps Iframe (Half Width) -->
                 <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="maps-container" style="overflow: hidden; padding-bottom: 56.25%; position: relative; height: 0;">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d748.7171330143437!2d28.306986586052613!3d-15.41691400399622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2szm!4v1729964455488!5m2!1sen!2szm" 
-                                style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-                                allowfullscreen="" loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="maps-container" style="overflow: hidden; padding-bottom: 56.25%; position: relative; height: 0; border-radius: 15px; overflow: hidden;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d748.7171330143437!2d28.306986586052613!3d-15.41691400399622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2szm!4v1729964455488!5m2!1sen!2szm" 
+                            style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px;"
+                            allowfullscreen="" loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
+                
 
                 <!-- Section Title (Other Half) -->
                 <div class="col-md-6 wow fadeInUp" data-wow-delay="0.3s">
