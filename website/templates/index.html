@@ -1,0 +1,532 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Jutem - Your stop for affordable loans</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="{% static 'website/lib/animate/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'website/lib/owlcarousel/assets/owl.carousel.min.css'%}" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="{% static 'website/css/bootstrap.min.css'%}" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="{% static 'website/css/style.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center" style="height: 45px;">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find using Google Maps</a>
+                        <a href="tel:260763300275" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+260763300275</a>
+                        <a href="mailto:mwiya108@gmail.com" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i>mwiya108@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-0"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+                <a href="#home" class="navbar-brand p-0">
+                    <h1 href="#home" class="text-primary m-0"><img src="static/website/images/logo.png" alt="Logo"></i>  Jutem Fund</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#services" class="nav-item nav-link">Services</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#feature" class="nav-item nav-link">Mandate</a>
+                        <a href="#footer" class="nav-item nav-link">Contact Us</a>
+                        <!--<div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                            <a href="/404" class="dropdown-item">404 Page</a>
+                            </div> </div>-->
+                    </div>
+                    <a href="#book" class="btn btn-primary rounded-pill text-white py-2 px-4 flex-wrap flex-sm-shrink-0">Book Appointment</a>
+                </div>
+            </nav>
+
+
+            <!-- Carousel Start -->
+    <div id = "home">         
+        <div id = "carousel">
+            <div class="header-carousel owl-carousel">
+                <div class="header-carousel-item">
+                    <img src="static/website/images/carousel-1.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="carousel-caption-content p-3">
+                            <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Jutem Fund</h5>
+                            <h1 class="display-1 text-capitalize text-white mb-4">You Envision it. We fund it.</h1>
+                            <p class="mb-5 fs-5">Don't sleep on your dreams. Reach out to Today! 
+                            </p>
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#book">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-carousel-item">
+                    <img src="static/website/images/carousel-1.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="carousel-caption-content p-3">
+                            <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Jutem Fund</h5>
+                            <h1 class="display-1 text-capitalize text-white mb-4">You Envision it. We fund it.</h1>
+                            <p class="mb-5 fs-5">Don't sleep on your dreams. Reach out to Today! 
+                            </p>
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#book">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel End -->
+        </div>
+    </div>
+    </div>    
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Services Start -->
+    <div id = "services">
+        <div class="container-fluid service py-5">
+            <div class="container py-5">
+                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="sub-style">
+                        <h4 class="sub-title px-3 mb-0">What We Do</h4>
+                    </div>
+                    <h1 class="display-3 mb-4">Funding and Advisory Services</h1>
+                    <p class="mb-0">Jutem Fund offers a range of services tailor made to satisfy our variety of clients</p>
+                </div>
+                <style>
+                    .service-item {
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%; /* Allow cards to take full height of their container */
+                    }
+                    .service-img {
+                        flex-shrink: 0; /* Prevent image from shrinking */
+                    }
+                    .service-content {
+                        flex-grow: 1; /* Allow content to grow and fill available space */
+                    }
+                </style>
+                
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded">
+                            <div class="service-img rounded-top">
+                                <img src="static/website/images/service-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                            </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4">Micro Financing</h5>
+                                    <p class="mb-4">Jutem provides collateral-based quick loans for up to ZMW 100,000</p>
+                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded">
+                            <div class="service-img rounded-top">
+                                <img src="static/website/images/service-2.jpg" class="img-fluid rounded-top w-100" alt="">
+                            </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4">Project Funding</h5>
+                                    <p class="mb-4">Given a compelling business case, Jutem Fund will finance/co-finance the project of your dreams</p>
+                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded">
+                            <div class="service-img rounded-top">
+                                <img src="static/website/images/service-3.jpg" class="img-fluid rounded-top w-100" alt="">
+                            </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4">Business Strategy Advisory</h5>
+                                    <p class="mb-4">Jutem provides business strategy consultancy to allow your business to thrive in an ever-evolving competitive market</p>
+                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Services More</a>
+                    </div>
+                </div>
+                
+                
+        </div>
+    </div>    
+        <!-- Services End -->
+
+
+        <!-- About Start -->
+    <div id = "about">     
+        <div class="container-fluid about bg-light py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="about-img pb-5 ps-5">
+                            <img src="static/website/images/about-2.jpeg" class="img-fluid rounded w-100" style="object-fit: cover;" alt="Image">
+                           <!-- <div class="about-img-inner">
+                                <img src="" class="img-fluid rounded-circle w-100 h-100" alt="Image">
+                            </div> -->
+                            <div class="about-experience"> </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="section-title text-start mb-5">
+                            <h4 class="sub-title pe-3 mb-0">About Us</h4>
+                            <h1 class="display-3 mb-4">Providing quality service at Gold standard</h1>
+                            <p class="mb-4">Founded in ....  Jutem Fund has quickly grown on account of continuous innovation and partnerships.</p>
+                            <div class="mb-4">
+                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> By the people.</p>
+                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> For the people.</p>
+                                <p class="text-secondary"><i class="fa fa-check text-primary me-2"></i> With the people.</p>
+                            </div>
+                            <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- About End -->
+
+        <!-- Feature Start -->
+    <div id = "feature">
+        <div class="container-fluid feature py-5">
+            <div class="container py-5">
+                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h4 class="sub-title px-3 mb-0">Why Choose Us</h4>
+                    </div>
+                    <h1 class="display-3 mb-4">Fulfill your dream today</h1>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="row-cols-1 feature-item p-4">
+                            <div class="col-12">
+                                <div class="feature-icon mb-4">
+                                    <div class="p-3 d-inline-flex bg-white rounded">
+                                        <i class="fas fa-diagnoses fa-4x text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="feature-content d-flex flex-column">
+                                    <h5 class="mb-4">Competitive Rates</h5>
+                                    <p class="mb-0">Negotiable rates to meet yout financial situation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="row-cols-1 feature-item p-4">
+                            <div class="col-12">
+                                <div class="feature-icon mb-4">
+                                    <div class="p-3 d-inline-flex bg-white rounded">
+                                        <i class="fas fa-briefcase-medical fa-4x text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="feature-content d-flex flex-column">
+                                    <h5 class="mb-4">Personalized Payback</h5>
+                                    <p class="mb-0">Customed timelines for payback of loans</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row-cols-1 feature-item p-4">
+                            <div class="col-12">
+                                <div class="feature-icon mb-4">
+                                    <div class="p-3 d-inline-flex bg-white rounded">
+                                        <i class="fas fa-hospital-user fa-4x text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="feature-content d-flex flex-column">
+                                    <h5 class="mb-4">Advisory</h5>
+                                    <p class="mb-0">We assist business' competitiveness</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+        <!-- Feature End -->
+
+
+        <!-- Book Appointment Start -->
+    <div id = "book">         
+        <div class="container-fluid appointment py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2">
+                        <div class="section-title text-start">
+                            <h4 class="sub-title pe-3 mb-0">Your Financial Solution </h4>
+                            <h1 class="display-4 mb-4">Best Quality Services At Your Convenience</h1>
+                            <p class="mb-4"> Send an email today to find out more. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="appointment-form rounded p-5">
+                            <p class="fs-4 text-uppercase text-primary">Get In Touch</p>
+                            <h1 class="display-5 mb-4">Make Appointment</h1>
+
+                            <form method="POST" action="{% url 'index' %}" id="enquiryForm">
+                                {% csrf_token %}
+                                <div class="row gy-3 gx-4">
+                                    <div class="col-xl-6">
+                                        <input type="text" class="form-control py-3 border-primary bg-transparent text-white" name="{{ form.full_name.name }}" placeholder="Full Name">
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="email" class="form-control py-3 border-primary bg-transparent text-white" name="{{ form.email.name }}" placeholder="Email">
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="text" class="form-control py-3 border-primary bg-transparent" name="{{ form.phone.name }}" placeholder="Phone">
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
+                                            <option selected>Industry</option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="text" class="form-control py-3 border-primary bg-transparent" name="{{ form.company.name }}" placeholder="Company">
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
+                                            <option selected>Product Enquiry</option>
+                                            <option value="1">Funding and Advisory Services</option>
+                                            <option value="2">Micro Financing</option>
+                                            <option value="2">Product Financing</option>
+                                            <option value="2">Business Strategy advisory</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control border-primary bg-transparent text-white" name="{{ form.comments.name }}" id="area-text" cols="30" rows="5" placeholder="Message..."></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary text-white w-100 py-3 px-5">SUBMIT NOW</button>
+                                    </div>
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Video 
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         16:9 aspect ratio
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    -->
+        <!-- Book Appointment End -->
+
+<!-- Feature Start -->
+<div id="feature">
+    <div class="container-fluid feature py-5">
+        <div class="container py-5">
+            <div class="row g-4 justify-content-center">
+                <!-- Google Maps Iframe (Half Width) -->
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="maps-container" style="overflow: hidden; padding-bottom: 56.25%; position: relative; height: 0;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d748.7171330143437!2d28.306986586052613!3d-15.41691400399622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2szm!4v1729964455488!5m2!1sen!2szm" 
+                                style="border:0; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                                allowfullscreen="" loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Section Title (Other Half) -->
+                <div class="col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="section-title text-start">
+                        <h4 class="sub-title pe-3 mb-0">Pay us a visit</h4>
+                        <h1 class="display-4 mb-4">We are located at Falcon Buiness Center</h1>
+                        <p class="mb-4">Behind Intercontinental Hotels Lusaka.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Feature End -->
+
+
+
+
+        <!-- Footer Start -->
+    <div id = "footer">     
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4"><i class="fas fa-star-of-life me-3"></i>Social Media</h4>
+                            <p>Find us through our social media platforms
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-white me-2"></i>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary text-white rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Quick Links</h4>
+                            <a href="#about"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Services</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Financial Advisory</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Micro Financing</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Project Financing</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Business Strategy Advisory</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Longacres, Lusaka</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> mwiya108@gmail.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +260 76 3300 275</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+    <div id = "copyright">     
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Jutem Fund</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://www.linkedin.com/in/mwiya-mwiya">Mwiya Mwiya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'website/lib/wow/wow.min.js' %}"></script>
+        <script src="{% static 'website/lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'website/lib/waypoints/waypoints.min.js' %}"></script>
+        <script src="{% static 'website/lib/owlcarousel/owl.carousel.min.js' %}"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="{% static 'website/js/main.js' %}"></script>
+
+
+<!-- =============================================================================================================
+this is the js that's supposed to work the logic of sending mail. Figure in out, genius
+============================================================================================================= -->
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript"> 
+            (function(){ 
+                emailjs.init("YOUR_USER_ID"); })(); 
+                
+                document.getElementById('contact-form').addEventListener('submit', function(event) { 
+                    event.preventDefault(); 
+                    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this) 
+                    .then(function() { alert('Message sent successfully!'); 
+
+                    }, function(error) { alert('Failed to send message. Error: ' + JSON.stringify(error)); }); 
+            }); 
+        </script>  -->
+        
+    </body>
+
+</html>
